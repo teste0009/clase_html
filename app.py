@@ -9,22 +9,7 @@ def hello_world():
 
 @app.route('/oi')
 def hola():
-    # return 'Tudo bom. Beleza?'
     return render_template("empleado_nuevo.html")
 
 if __name__ == '__main__':
   app.run(port=5000, debug=True)
-
-
-"""
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return "!Holaaaaaavcvcvc  Mundoooooooo¡"
-
-if __name__ == '__main__':
-    app.run(debug = True)
-"""
